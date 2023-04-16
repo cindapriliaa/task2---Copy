@@ -21,4 +21,9 @@ class Pengeluaran extends Model
     {
         return $this->belongsTo(PengeluaranModel::class, 'id_pengeluaran');
     }
+
+    public function pembayaran()
+    {
+        return $this->belongsTo(PembayaranModel::class, 'id_pembayaran');
+    }
 }
